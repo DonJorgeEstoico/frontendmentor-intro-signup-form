@@ -9,8 +9,9 @@ function logSubmit(event) {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
 
-    // Validaciones simples
+    // Simple validation
     if (firstName === "" || lastName === "" || email === "" || password === "") {
+        // Adding and removing styles to certain elements
         input.forEach(element => {
             element.classList.add("invalid");
         });
@@ -36,9 +37,10 @@ function logSubmit(event) {
         });
     }
 
-    // Puedes limpiar los campos después de enviar
+    // Resetting form style and values
     document.getElementById("signup-form").reset();
 }
 
+// Listener for form by submit operation
 const form = document.getElementById("signup-form");
 form.addEventListener("submit", logSubmit);
