@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Intro Component With Signup Form</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <article id="article-title-span">
+                <h1>
+                    Learn to code by <br>
+                    watching others
+                </h1>
+                <span>
+                    See how experienced developers solve problems in real-time. <br>
+                    Watching scripted tutorials is great, but understanding how <br>
+                    developers think is invaluable.
+                </span>
+            </article>
+            <article>
+                <div id="try-free-widget">
+                    <span>
+                        <b>Try it free 7 days</b> then $20/mo. thereafter
+                    </span>
+                </div>
+                <form id="signup-form">
+                    <div class="flex-column">
+                        <div class="input-area">
+                            <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                            <img src="images/icon-error.svg" alt="icon-error" class="icon-error hidden">
+                        </div>
+                        <span class="span-error hidden">
+                            First Name cannot be empty
+                        </span>
+                    </div>
+                    <div class="flex-column">
+                        <div class="input-area">
+                            <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                            <img src="images/icon-error.svg" alt="icon-error" class="icon-error hidden">
+                        </div>
+                        <span class="span-error hidden">
+                            Last Name cannot be empty
+                        </span>
+                    </div>
+                    <div class="flex-column">
+                        <div class="input-area">
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                            <img src="images/icon-error.svg" alt="icon-error" class="icon-error hidden">
+                        </div>
+                        <span class="span-error hidden">
+                            Looks like this is not an email
+                        </span>
+                    </div>
+                    <div class="flex-column">
+                        <div class="input-area">
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <img src="images/icon-error.svg" alt="icon-error" class="icon-error hidden">
+                        </div>
+                        <span class="span-error hidden">
+                            Password cannot be empty
+                        </span>
+                    </div>
+                    <button type="submit">
+                        CLAIM YOUR FREE TRIAL
+                    </button>
+                    <div id="agreeing-services-area">
+                        <span id="span-agreeing-services">
+                            By clicking the button, you are agreeing to our <b>Terms and Services</b>
+                        </span>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

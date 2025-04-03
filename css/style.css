@@ -1,0 +1,221 @@
+html {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(../images/bg-intro-desktop.png);
+}
+
+/*------------------------------FONTS------------------------------*/
+.poppins-font,
+h1,
+span,
+b,
+input,
+i,
+button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#article-title-span, 
+h1 span {
+    color: #FFFFFF;
+}
+
+#article-title-span h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#article-title-span span {
+    font-weight: 400;
+}
+
+#try-free-widget,
+span b {
+    color: #FFFFFF;
+}
+
+#try-free-widget span {
+    font-weight: 200;
+}
+
+#try-free-widget b {
+    font-size: 1rem;
+}
+
+.span-error,
+#span-agreeing-services,
+b {
+    font-size: 12px;
+}
+
+#span-agreeing-services {
+    color: hsl(246, 25%, 77%);
+}
+
+.span-error,
+#span-agreeing-services b {
+    color: hsl(0, 100%, 74%);
+}
+
+.span-error {
+    font-weight: 400;
+    font-style: italic;
+    align-self: flex-end;
+}
+
+/*------------------------------FLEXBOX------------------------------*/
+.flex-column,
+main,
+article,
+form,
+#agreeing-services-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row,
+section,
+.input-area {
+    display: flex;
+    flex-direction: row;
+}
+
+/*------------------------------AREAS------------------------------*/
+section {
+    gap: 6rem;
+    align-items: center;
+}
+
+article {
+    gap: 1.5rem;
+}
+
+#try-free-widget {
+    text-align: center;
+    padding-block: 1rem;
+    padding-inline: 6rem;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 1rem;
+    box-shadow: 0px 9px 0px 0px #00000038;
+}
+
+/*!-FORM-!*/
+form {
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+}
+
+input,
+button {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 5px;
+}
+
+/*!-INPUT-!*/
+input {
+    color: hsl(249, 10%, 26%);
+    outline: none;
+    border-style: none;
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+}
+
+input:focus {
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+-webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+.input-area {
+    align-items: center;
+    border-color: #ffffff4d;
+    border-style: ridge;
+    border-radius: 5px;
+}
+
+.input-area:hover {
+    border-color: hsl(248, 32%, 49%);
+}
+
+.invalid {
+    border-color: hsl(0, 100%, 74%) !important;
+}
+
+.icon-error {
+    padding-inline: 2rem;
+    height: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/*!-BUTTON-!*/
+button {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: hsl(154, 59%, 51%);
+    border-style: none;
+    border-bottom-style: outset;
+    border-bottom-color: hsl(154deg 100% 67.14%);
+    border-bottom-width: thick;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(154, 70%, 62%);
+}
+
+#agreeing-services-area {
+    align-items: center;
+}
+
+/*------------------------------MEDIAS------------------------------*/
+@media (max-width: 768px) {
+    body {
+        margin: 2rem;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    #article-title-span {
+        text-align: center;
+    }
+}
